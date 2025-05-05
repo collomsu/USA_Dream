@@ -1,7 +1,7 @@
 # Description du Projet : USA_Dream en C#
 
 ## Nom du Projet
-**Survie Aléatoire**
+**USA_Dream**
 
 ## Équipe de Développement
 - Sullivan Colomb
