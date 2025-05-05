@@ -13,7 +13,7 @@ namespace USA_Dream_V0
         private decimal _price;
         private Action _action;
 
-        public Item(string name, string description, decimal price,Action action)
+        public Item(string name, string description, decimal price, Action action)
         {
             this._name = name;
             this._description = description;
@@ -25,19 +25,20 @@ namespace USA_Dream_V0
         {
             get { return _name; }
         }
+        
         public string Description
         {
             get { return _description; }
         }
+        
         public decimal Price
         {
             get { return _price; }
         }
+        
         public Action Action
         {
             get { return _action; }
         }
-
-
     }
 }
