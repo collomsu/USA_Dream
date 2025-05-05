@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyApp
+namespace USA_Dream_V0
 {
     internal class Program
     {
