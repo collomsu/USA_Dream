@@ -34,6 +34,11 @@ namespace USA_Dream_V0
             get => _price;
         }
 
+        public List<Statistic> StatsModifier
+        {
+            get => _statsModifier;
+        }
+
         public void AddStatModifier(Statistic statistic)
         {
             _statsModifier.Add(statistic);
