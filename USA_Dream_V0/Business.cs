@@ -62,9 +62,12 @@ namespace USA_Dream_V0
             _services.Add(service);
         }
 
-        public bool DeleteService(Service service)
+        public bool DeleteService(string serviceName)
         {
-            return _services.Remove(service);
+            Service? ServiceToDelete = _services.Find(x => x.Name == serviceName);
+            if (ServiceToDelete == null) return false;
+            _services.Remove(ServiceToDelete);
+            return true;
         }
 
         public void AddItem(Item item)
@@ -72,9 +75,12 @@ namespace USA_Dream_V0
             _items.Add(item);
         }
 
-        public bool DeleteItem(Item item)
+        public bool DeleteItem(string itemName)
         {
-            return _items.Remove(item);
+            Item? itemToDelete = _items.Find(x => x.Name == itemName);
+            if (itemToDelete == null) return false;
+            _items.Remove(itemToDelete);
+            return true;
         }
     }
 }
