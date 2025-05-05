@@ -34,7 +34,7 @@ namespace USA_Dream_V0
             get => _description;
         }
 
-        public List<Business> Items
+        public List<Business> Business
         {
             get => _businesss;
         }
