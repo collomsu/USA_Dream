@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace USA_Dream_V0
 {
-    internal class Inventory
+    public class Inventory
     {
         private decimal _money;
         private List<Item> _items;
