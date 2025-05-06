@@ -66,7 +66,6 @@ namespace USA_Dream_V0
                 }
                 catch 
                 {
-                    //throw new Exception("The statistics wasn't found or incorrect . . . ");
                     return false;
                 }
             }
