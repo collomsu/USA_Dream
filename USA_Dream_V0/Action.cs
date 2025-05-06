@@ -38,19 +38,14 @@ namespace USA_Dream_V0
         {
             this.StatisticModifier.Add(statistic);
         }
-        public bool RemoveStatistic(Statistic statistic) 
+        public bool RemoveStatistic(string name)
         {
-            foreach (var stat in this.StatisticModifier)
-            {
-                if (stat.Name == statistic.Name)
-                {
-                    this.StatisticModifier.Remove(stat);
-                    return true;
-                }
-            }
-            return false;
+            Statistic? statToDelete = _statisticsModifier.Find(s => s.Name == name);
+            if (statToDelete == null) return false;
+            _statisticsModifier.Remove(statToDelete);
+            return true;
         }
-       
+
         public bool DoAction(ref Human person)
         {
             List<Statistic> statisticsPerson = person.Statistics;
