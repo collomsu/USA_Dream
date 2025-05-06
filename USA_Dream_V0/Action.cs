@@ -51,8 +51,7 @@ namespace USA_Dream_V0
             return false;
         }
        
-        //Do we return a bool to verify if action is going well ? 
-        public void DoAction(Human person)
+        public bool DoAction(ref Human person)
         {
             List<Statistic> statisticsPerson = person.Statistics;
             foreach (Statistic stat in this._statisticsModifier)
@@ -68,9 +67,10 @@ namespace USA_Dream_V0
                 catch 
                 {
                     //throw new Exception("The statistics wasn't found or incorrect . . . ");
-                    continue;
+                    return false;
                 }
             }
+            return true;
         }
 
     }

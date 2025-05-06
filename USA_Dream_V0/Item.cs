@@ -36,7 +36,7 @@ namespace USA_Dream_V0
             get { return _price; }
         }
         
-        public System.Action Action
+        public Action Action
         {
             get { return _action; }
         }
