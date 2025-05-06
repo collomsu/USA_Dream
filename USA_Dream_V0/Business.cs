@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace USA_Dream_V0
 {
-    internal class Business
+    public class Business
     {
         private string _name;
         private string _description;
