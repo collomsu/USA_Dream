@@ -21,7 +21,7 @@ namespace USA_Dream_V0
 
         public Street(string name, string description, List<Business> businesss) : this(name, description)
         {
-            _businesss = businesss;
+            this._businesss = businesss;
         }
 
         public string Name
